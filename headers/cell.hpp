@@ -12,6 +12,9 @@ class Cell
         ushort value;
 
     public:
+        Cell();
+        ~Cell();
+
         bool get_visible() const;
         ushort get_value() const;
 

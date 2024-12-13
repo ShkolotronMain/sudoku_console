@@ -1,19 +1,19 @@
 #ifndef TABLE_H
 #define TABLE_H
 
-#include "row.hpp"
+#include "game_row.hpp"
 
 class Table
 {
     private:
-        Row* rows;
+        GameRow* rows;
 
     public:
         Table();
         ~Table();
 
-        Row* get_rows() const;
-        Row& operator[](ushort) const;
+        GameRow* get_rows() const;
+        GameRow& operator[](ushort) const;
 };
 
 #endif

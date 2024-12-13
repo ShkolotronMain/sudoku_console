@@ -2,7 +2,7 @@
 
 Row::Row()
 {
-    this->cells = new Cell[9];
+    this->cells = new GameCell[9];
 }
 
 Row::~Row()
@@ -10,12 +10,12 @@ Row::~Row()
     delete[] this->cells;
 }
 
-Cell* Row::get_cells() const
+GameCell* Row::get_cells() const
 {
     return this->cells;
 }
 
-Cell& Row::operator[](ushort val) const
+GameCell& Row::operator[](ushort val) const
 {
     if (val > 9)
         throw "Неверное значение";

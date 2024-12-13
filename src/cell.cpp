@@ -1,5 +1,11 @@
 #include "headers/cell.hpp"
 
+Cell::Cell()
+{
+    this->visible = 0;
+    this->value = 0;
+}
+
 bool Cell::get_visible() const
 {
     return this->visible;

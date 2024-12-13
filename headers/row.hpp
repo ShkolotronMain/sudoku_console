@@ -1,19 +1,19 @@
 #ifndef ROW_H
 #define ROW_H
 
-#include "cell.hpp"
+#include "game_cell.hpp"
 
 class Row
 {
     private:
-        Cell* cells;
+        GameCell* cells;
 
     public:
         Row();
         ~Row();
 
-        Cell* get_cells() const;
-        Cell& operator[](ushort) const;
+        GameCell* get_cells() const;
+        GameCell& operator[](ushort) const;
 };
 
 #endif
